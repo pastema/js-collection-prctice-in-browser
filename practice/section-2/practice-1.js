@@ -13,21 +13,21 @@ var getLetters = new Array();
 function countSameElements(collection) {
   var getCollectedLetters = new Array();
   
-  for(var x=0; x<=collection.length-1;x++)
+  for(var x=0; x<=collection.length-1;x++) //9
   {
     if(getLetters[0] != collection[x])   
     {
       if(getLetters.length != 0 )     
       { 
-        getCollectedLetters = getLetters;    
-        final.push(getLettersList(getCollectedLetters)); 
-        getLetters.length = 0;    
+        getCollectedLetters = getLetters;     /// aaa = aaa
+        final.push(getLettersList(getCollectedLetters)); //show key,count
+        getLetters.length = 0;    //empty array
       }
     }
-      getLetters.push(collection[x]); 
+      getLetters.push(collection[x]); //eeeeeee
       if(x+1 == collection.length)
       {
-        final.push(getLettersList(getCollectedLetters)); 
+        final.push(getLettersList(getCollectedLetters)); //show key,count
       }
 }
      return(final);
